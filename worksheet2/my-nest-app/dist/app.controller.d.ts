@@ -5,4 +5,7 @@ export declare class AppController {
     getHello(): string;
     getArticles(): any[];
     getArticlesById(id: string): any;
+    createArticle(article: any): any;
+    deleteArticle(id: string): any;
+    updateArticle(id: string, updatedArticle: any): any;
 }

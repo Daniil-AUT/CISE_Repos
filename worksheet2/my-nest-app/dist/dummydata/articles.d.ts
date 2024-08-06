@@ -1,1 +1,1 @@
-export declare const ARTICLES: any[];
+export declare let ARTICLES: any[];

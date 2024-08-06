@@ -1,4 +1,4 @@
-export const ARTICLES: any[] = [
+export let ARTICLES: any[] = [
   {
     _id: "1",
     title: "An experimental evaluation of test driven development vs. test-last development with industry professionals",
