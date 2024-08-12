@@ -11,7 +11,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="aut.ac.nzz"
+          href="aut.ac.nz"
           target="_blank"
           rel="noopener noreferrer"
         >
