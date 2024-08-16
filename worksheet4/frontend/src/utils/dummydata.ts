@@ -49,5 +49,15 @@ const data = [
       claim: "code quality improvement", 
       evidence: "weak against",
     },
+    {
+      _id: "6",
+      title: "Testing",
+      authors: "Testing",
+      source: "Testing",
+      pubyear: "Testin",
+      doi: "https://doi.org/10.1109/esem.2007.35",
+      claim: "Testing", 
+      evidence: "Testing",
+    },
   ];
     export default data;
