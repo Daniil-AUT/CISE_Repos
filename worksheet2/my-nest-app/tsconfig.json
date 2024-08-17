@@ -18,6 +18,7 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "typeRoots": ["./node_modules/@types"],
-    "types": ["babel__core", "babel__generator", "babel__template", "babel__traverse"]
+    "types": ["jest", "babel__core", "babel__generator", "babel__template", "babel__traverse"],
+    "jsx": "react"
   }
 }
