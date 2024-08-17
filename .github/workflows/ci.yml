@@ -9,25 +9,25 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     strategy:
       matrix:
-        node-version: [20.x]  # Change to 20.x if you want to use the latest version
+        node-version: [20.x]  # Match your local Node.js version
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3  # Updated to the latest version
-    
+      uses: actions/checkout@v3
+
     - name: Set up Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3  # Updated to the latest version
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    
+
     - name: Install dependencies
-      run: npm install
-    
+      run: npm ci  # Ensures a clean, consistent install
+
     - name: Run the tests
-      run: npm test
-    
+      run: npx jest  # Use npx to ensure Jest is found
+
     - name: Build
       run: npm run build
